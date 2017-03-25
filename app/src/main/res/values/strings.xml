@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">GoogleLogin</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="facebook_app_id"></string>
+    <string name="title_activity_news_feed">NewsFeedActivity</string>
+    <string name="title_activity_setting">SettingActivity</string>
+
+</resources>

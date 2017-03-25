@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/social_background1"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.googlelogin.manas.googlelogin.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rectangle_background"
+        android:text="Social\nAggregator"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ma_pbtn">
+
+    <com.google.android.gms.common.SignInButton
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="5dp"
+        android:layout_marginLeft="50dp"
+        android:id="@+id/sign_in_button"/>
+
+    <com.facebook.login.widget.LoginButton
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/sign_in_button"
+        android:id="@+id/fb_btn"/>
+
+
+    <com.twitter.sdk.android.core.identity.TwitterLoginButton
+        android:id="@+id/twitter_login_button"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@+id/fb_btn"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="5dp"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/twitter_login_button"
+        android:layout_marginLeft="50dp"
+        android:background="@drawable/linkedin_button"
+        android:layout_margin="5dp"
+        android:id="@+id/li_btn"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabSize="mini"
+        android:layout_alignParentRight="true"
+        android:id="@+id/iv_google"
+        android:visibility="invisible"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="10dp"
+        app:backgroundTint="@color/green"
+        android:src="@drawable/ic_done_white_24dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabSize="mini"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/sign_in_button"
+        android:id="@+id/iv_fb"
+        android:visibility="invisible"
+        app:backgroundTint="@color/green"
+        android:src="@drawable/ic_done_white_24dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabSize="mini"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/fb_btn"
+        android:layout_marginRight="50dp"
+        android:id="@+id/iv_twitter"
+        android:visibility="invisible"
+        android:layout_marginTop="10dp"
+        app:backgroundTint="@color/green"
+        android:src="@drawable/ic_done_white_24dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabSize="mini"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/twitter_login_button"
+        android:id="@+id/iv_linkedin"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="50dp"
+        android:visibility="invisible"
+        app:backgroundTint="@color/green"
+        android:src="@drawable/ic_done_white_24dp" />
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right|center"
+        android:textColor="@color/white"
+        android:paddingRight="15dp"
+        android:background="@color/green"
+        android:id="@+id/ma_pbtn"
+        android:layout_alignParentBottom="true"
+        android:text="Proceed >"/>
+
+</RelativeLayout>

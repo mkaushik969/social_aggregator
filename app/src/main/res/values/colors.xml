@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#3F51B5</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="green">#008000</color>
+    <color name="dark_green">#006400</color>
+    <color name="forestgreen">#228B22</color>
+    <color name="lime">#00FF00</color>
+    <color name="darkred">#8B0000</color>
+    <color name="maroon">#800000</color>
+    <color name="red">#FF0000</color>
+    <color name="tomato">#FF6347</color>
+    <color name="grey">#808080</color>
+    <color name="google_color">#dd4b39</color>
+    <color name="twitter_color">#00aced</color>
+    <color name="linkedin_color">#007bb6</color>
+</resources>

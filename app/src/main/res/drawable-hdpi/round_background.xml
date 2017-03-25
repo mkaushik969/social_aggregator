@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval"
+    android:id="@+id/round_tv_background">
+
+    <stroke android:color="@color/grey"
+        android:width="2sp"/>
+
+    <size android:height="40dp"
+        android:width="40dp"/>
+</shape>
